@@ -1,0 +1,58 @@
+<templateSet group="Apex">
+  <template name="const" value="$modifier$ static final $type$ $name$ = $value$;" description="Constant Decalration" toReformat="true" toShortenFQNames="true">
+    <variable name="modifier" expression="&quot;private&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="type" expression="&quot;String&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="name" expression="&quot;CONST_NAME&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="&quot;value&quot;" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ctor" value="public $classname$ ($param$) {&#10;&#9;$end$&#10;}" description="Constructor" toReformat="true" toShortenFQNames="true">
+    <variable name="classname" expression="classNameComplete()" defaultValue="className" alwaysStopAt="true" />
+    <variable name="param" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="debug" value="System.debug(LoggingLevel.ERROE, '*** $name$ : ' + $value$);" description="System.debug" toReformat="true" toShortenFQNames="true">
+    <variable name="name" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="value" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="fore" value="for (Integer $i$ = 0; $i$ &lt; $length$; $i$++) {&#10;&#9;$end$&#10;}" description="foreach loop" toReformat="true" toShortenFQNames="true">
+    <variable name="i" expression="&quot;i&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="length" expression="&quot;length&quot;" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="for" value="for ($type$ $inctance$ : $collection$) {&#10;&#9;$end$&#10;}" description="for loop" toReformat="true" toShortenFQNames="true">
+    <variable name="type" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="inctance" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="collection" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="if" value="if ($expr$) {&#10;&#9;$end$&#10;}" description="if" toReformat="true" toShortenFQNames="true">
+    <variable name="expr" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+  <template name="ife" value="if ($expr$) {&#10;&#9;$statement$&#10;} else {&#10;&#9;$end$&#10;}" description="if - else" toReformat="true" toShortenFQNames="true">
+    <variable name="expr" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="statement" expression="" defaultValue="" alwaysStopAt="true" />
+    <variable name="end" expression="" defaultValue="" alwaysStopAt="true" />
+    <context>
+      <option name="OTHER" value="true" />
+    </context>
+  </template>
+</templateSet>
